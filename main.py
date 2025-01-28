@@ -7,7 +7,7 @@ import numpy as np
 st.title("Milk Quality Prediction App")
 
 file_name = "lr_model.pkl"
-with open(path.join("model",file_name),'rb') as f:
+with open(path.join(file_name),'rb') as f:
     lr_modle = pickle.load(f)
 ph = st.number_input("Insert a pH Value(3-9.5)")
 tm = st.number_input("Insert Temprature of Milk (34-90)")
